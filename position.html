@@ -1,78 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
-
     <style>
       body {
-        margin-bottom: 120px;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
       }
-      .container {
+
+      .parent {
+        background-color: lightblue;
+        margin: 0 auto;
         position: relative;
+        width: 90%;
       }
-      nav {
-        box-sizing: border-box;
-        border: 3px solid red;
-        left: 0px;
-        position: absolute;
+
+      main {
+        background-color: sandybrown;
+        max-width: 50%;
+        padding: 50px;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .absolute {
+        background-color: green;
+        height: 200px;
         width: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
       }
-      section {
-        box-sizing: border-box;
-        border: 3px solid orange;
-        /* position is static by default */
-        margin-left: 200px;
-        margin-bottom: 10px;
-      }
-      footer {
+
+      .fixed {
         background-color: red;
-        box-sizing: border-box;
-        bottom: 0;
-        border: 3px solid green;
-        left: 0;
-        height: 70px;
+        height: 200px;
         position: fixed;
-        text-align: center;
-        width: 100%;
+        bottom: 0;
+        left: 0;
+        width: 200px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Bar Food</a></li>
-          <li><a href="">Beer List</a></li>
-          <li><a href="">Hours</a></li>
-          <li><a href="">Location</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <section>
-        <h1>My First Heading</h1>
-        <p>
-          Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
-          ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
-          ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
-          euismod.
-        </p>
-      </section>
-      <section>
-        <h2>Second Section</h2>
-        <p>
-          Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus
-          magna, vel scelerisque nisl consectetur et. Nullam quis risus eget
-          urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
-          dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
-          nulla sed consectetur. Vestibulum id ligula porta felis euismod
-          semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-        </p>
-      </section>
-      <section>
-        <p>
-          Notice what happens when you resize your browser. It works nicely!
-        </p>
+    <div class="parent">
+      <main>
+        <div class="absolute"></div>
+        <div class="fixed"></div>
+        <h1>Heading</h1>
         <p>
           Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus
           mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl
@@ -137,11 +113,31 @@
           vel eu leo. Cras mattis consectetur purus sit amet fermentum. Integer
           posuere erat a ante venenatis dapibus posuere velit aliquet.
         </p>
-      </section>
-      <footer>
-        If you use a fixed header or footer, make sure there is room for it! I
-        put a margin-bottom on the body.
-      </footer>
+        <p>
+          Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus
+          mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl
+          consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia
+          quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare
+          vel eu leo. Cras mattis consectetur purus sit amet fermentum. Integer
+          posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </p>
+        <p>
+          Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus
+          mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl
+          consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia
+          quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare
+          vel eu leo. Cras mattis consectetur purus sit amet fermentum. Integer
+          posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </p>
+        <p>
+          Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus
+          mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl
+          consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia
+          quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare
+          vel eu leo. Cras mattis consectetur purus sit amet fermentum. Integer
+          posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </p>
+      </main>
     </div>
   </body>
 </html>
