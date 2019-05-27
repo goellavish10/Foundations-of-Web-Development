@@ -11,7 +11,33 @@
       article {
         border: 3px solid red;
         overflow: auto;
-        clear: both;
+        /* clear: both; */
+        /* height: 500px; */
+      }
+
+      article div {
+        height: 500px;
+        float: left;
+        width: 33.333333333%;
+      }
+
+      div.one {
+        background-color: red;
+      }
+
+      div.two {
+        background-color: blue;
+      }
+
+      div.three {
+        background-color: green;
+      }
+
+      div.four {
+        background-color: purple;
+        height: 300px;
+        clear: left;
+        width: 100%;
       }
 
       article p {
@@ -31,16 +57,10 @@
   </head>
   <body>
     <article>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta
-        gravida at eget metus. Maecenas faucibus mollis interdum. Curabitur
-        blandit tempus porttitor.
-      </p>
-      <img
-        src="https://www.placecage.com/g/500/500"
-        alt="nic cage is a cool dude"
-      />
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
     </article>
   </body>
 </html>
