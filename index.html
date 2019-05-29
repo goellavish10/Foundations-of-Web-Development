@@ -15,50 +15,75 @@
       <span class="food">Spicy Tingly Beef noodles from Xian</span>.
     </p>
 
-    <input class="name_field" type="text" />
+    <input class="name_field" placeholder="Favorite food please" type="text" />
+    <!-- <input class="lname_field" placeholder="Last name" type="text" /> -->
 
     <button class="presto">Abra Cadabra!</button>
 
     <script type="text/javascript">
-      let myVariable = "Hello World!";
+      // let myVariable = "Hello World";
 
-      // alert(myVariable);
+      // myVariable = "Hello my beautiful class, you are lovely!!!!";
 
-      window.onload = function() {
-        // do something when the page loads
-        // alert("welcome");
-      };
+      // console.log(operation);
+
+      // window.onload = function() {
+      //   // do something when the page loads
+      //   // alert("welcome");
+      // };
+
+      // let count = 0;
+
+      // document.querySelector("html").onclick = function() {
+      //   // console.log("Ouch! Stop poking me!");
+      //   count = count + 1;
+
+      //   console.log(count);
+
+      //   if (count > 6) {
+      //     console.log("whoa buddy that is enough clicks!");
+      //   }
+      // };
 
       // let btn = document.querySelector(".presto");
       // btn.onclick = function() {
       //   let form = document.querySelector(".name_field");
       //   let form_input = form.value;
-      //   alert(form_input);
+
+      //   let lastname = document.querySelector(".lname_field");
+      //   let lname_input = lastname.value;
+      //   console.log(form_input + " " + lname_input);
       // };
 
       // Conditionals in a function
-      // let btn = document.querySelector(".presto");
-      // btn.onclick = function() {
-      //   let form = document.querySelector(".name_field");
-      //   let form_input = form.value;
-      //   condFunc(form_input);
-      // };
+      let btn = document.querySelector(".presto");
 
-      // function condFunc(input) {
-      //   if (input === "pizza") {
-      //     alert("Pineapple on pizza is delicious, sorry!");
-      //   } else if (input === "empanada") {
-      //     alert("Mi favorito!");
-      //   } else {
-      //     alert("That sounds pretty good too, I guess.");
-      //   }
+      btn.onclick = function() {
+        let form = document.querySelector(".name_field");
+        let form_input = form.value;
+
+        condFunc(form_input);
+      };
+
+      function condFunc(input) {
+        if (input === "pizza") {
+          console.log("Pineapple on pizza is delicious, sorry!");
+        } else if (input === "empanada") {
+          console.log("Mi favorito!");
+        } else {
+          console.log("That sounds pretty good too, I guess.");
+        }
+      }
+
+      // function myFunc(input) {
+      //   // let message = input + " duh!";
+
+      //   let result = input * 2;
+
+      //   console.log(result);
       // }
 
-      function myFunc(input) {
-        let message = input + " duh!";
-
-        alert(message);
-      }
+      // myFunc(500);
 
       function multiply(num1, num2) {
         var result = num1 * num2;
