@@ -74,13 +74,19 @@ header ul li {
 }
 
 header ul li a {
+  /* background-color: white; */
   color: black;
   font-size: 15px;
+  display: inline-block;
+  padding: 0;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 header ul li a:hover {
-  text-decoration: underline;
+  /* background-color: green; */
+  color: red;
+  /* text-decoration: underline; */
 }
 
 header .cart {
@@ -92,6 +98,10 @@ header .cart {
   position: relative;
   top: 3px;
   width: 40px;
+}
+
+header .cart:hover .cart_expand {
+  display: block;
 }
 
 header .cart img {
@@ -111,10 +121,6 @@ header .cart img:hover {
   top: 100%;
   right: 0;
   width: 250px;
-}
-
-header .cart:hover .cart_expand {
-  display: block;
 }
 
 .cart_expand h6 {
@@ -201,6 +207,13 @@ p {
 .about_section {
   padding-top: 70px;
   padding-right: 40%;
+
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.about_section.showme {
+  opacity: 1;
 }
 
 .roasts_section {
@@ -225,6 +238,10 @@ p {
 
 #overlay.show {
   display: block;
+}
+
+#overlay.newstyle h1 {
+  color: green;
 }
 
 #messageBox {
