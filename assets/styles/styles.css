@@ -20,26 +20,37 @@ p {
   line-height: 1.5;
 }
 
-.name,
-.food {
+.country_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.country_list li {
+  background-color: lightpink;
+  border-radius: 5px;
+  padding: 2%;
+  width: calc(25% - 10px);
+  margin-bottom: 10px;
+}
+
+.country_list li span {
+  display: block;
+  text-align: center;
+}
+
+.country_list li .country {
   font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  display: block;
+  margin-bottom: 1%;
 }
 
-.name {
-  color: hotpink;
-}
-
-.food {
-  color: blueviolet;
-}
-
-.presto {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px;
-}
-
-input[type=text] {
-  font-size: 18px;
-  padding: 15px;
+.country_list li .capital {
+  font-size: 1.7vw;
+  font-family: sans-serif;
 }

@@ -7,7 +7,9 @@ function buildList(data) {
   // get number of items in response
   let count = sanitize.length;
 
-  console.log(sanitize[0]);
+  console.log(sanitize);
+  // console.log(sanitize[0]);
+  console.log(sanitize[0].capital);
 
   // add count to the paragraph
   document.querySelector(".country_count").innerHTML = count;
@@ -15,11 +17,19 @@ function buildList(data) {
   // loop through response items and build list
   for (i = 0; i <= count; i++) {
     let list = document.querySelector(".country_list");
+
     let country = sanitize[i] ? sanitize[i].name : null;
+    let capital = sanitize[i] ? sanitize[i].capital : null;
 
     if (country) {
       let list_item = document.createElement("li");
-      list_item.innerHTML = country;
+      list_item.innerHTML = '<span class="country">' + country + "</span>";
+      list_item.innerHTML =
+        '<span class="country">' +
+        country +
+        '</span><span class="capital">' +
+        capital +
+        "</span>";
       list.append(list_item);
     }
   }
